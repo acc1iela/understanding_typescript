@@ -33,3 +33,15 @@ for (const hobby of person.hobbies) {
 if (person.role === Role.ADMIN) {
   console.log('読み取り専用ユーザー');
 }
+
+// union型について
+function combine(input1: number | string, input2: number | string) {
+  if (typeof input1 === 'number' && typeof input2 === 'number') {
+    result = input1 + input2;
+  } else {
+    result = input1.toString() + input2.toString();
+  }
+  return result;
+}
+
+const combinedAges = combine(30, 26);
