@@ -10,8 +10,17 @@ function printResult(num: number) {
 // 型の定義だけ一致していれば良い
 let combineValues: (a: number, b: number) => number;
 
-combineValues = add;
+combineValues = sumple;
 
 console.log(combineValues(8, 8));
 
-printResult(add(5, 12));
+printResult(sumple(5, 12));
+
+function addAndHandle(n1: number, n2: number, cb: (num: number) => void) {
+  const result = n1 + n2;
+  cb(result);
+}
+
+addAndHandle(10, 20, (result) => {
+  console.log(result);
+});
