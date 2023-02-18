@@ -48,3 +48,9 @@ function combine(input1: Combinable, input2: Combinable) {
 }
 
 const combinedAges = combine(30, 26);
+
+let userInput: unknown;
+let userName: string;
+
+userInput = 5;
+userInput = 'Max';
