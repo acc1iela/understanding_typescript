@@ -36,3 +36,6 @@ function generateError(message, code) {
     throw { message: message, errorCode: code };
 }
 generateError('エラーが発生しました', 500);
+const printOutput = (output) => console.log(output);
+printOutput(add(2, 5));
+//# sourceMappingURL=app.js.map

@@ -44,3 +44,6 @@ function generateError(message: string, code: number): never {
 }
 
 generateError('エラーが発生しました', 500);
+
+const printOutput: (output: string | number) => void = (output) => console.log(output);
+printOutput(add(2, 5));
