@@ -38,4 +38,6 @@ function generateError(message, code) {
 generateError('エラーが発生しました', 500);
 const printOutput = (output) => console.log(output);
 printOutput(add(2, 5));
+const hobbies = ['Sports', 'Cooking'];
+const activeHobbies = ['Hikking', ...hobbies];
 //# sourceMappingURL=app.js.map

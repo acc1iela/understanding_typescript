@@ -47,3 +47,6 @@ generateError('エラーが発生しました', 500);
 
 const printOutput: (output: string | number) => void = (output) => console.log(output);
 printOutput(add(2, 5));
+
+const hobbies = ['Sports', 'Cooking'];
+const activeHobbies = ['Hikking', ...hobbies];
