@@ -25,10 +25,6 @@ const person = {
   role: Role.ADMIN,
 };
 
-// const ADMIN = 0;
-// const READ_ONLY = 1;
-// const AUTHOR = 2;
-
 for (const hobby of person.hobbies) {
   console.log(hobby.toUpperCase());
 }
